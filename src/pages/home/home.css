@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap');
+
+header {
+    background: url(../../assets/header.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 20em;
+    border: 10px solid #486e58;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 2em;
+}
+
+nav a {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #87b99c;
+    text-shadow: 0 4px 10px rgba(51, 23, 4, 0.774);
+}
+
+header h1 {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+#section-entrees,
+#section-desserts,
+#section-dishes {
+    display: flex;
+    background-color: #486e58;
+    height: 30em;
+    justify-content: center;
+    align-items: center;
+    gap: 12em;
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+}
+
+#section-dishes {
+    background-color: #294B37;
+}
+
+#section-entrees img,
+#section-dishes img,
+#section-desserts img {
+    width: 270px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 100px 100px 0 0;
+    display: block;
+    padding-top: 5px;
+}
+
+#section-entrees img {
+    border-radius: 100px 100px 0 0;
+}
+
+#section-dishes img {
+    border-radius: 0 100px 0 0;
+}
+
+#section-desserts img {
+    border-radius: 100px 0 0 0;
+}
+
+#container-entrees,
+#container-dishes,
+#container-desserts {
+    display: grid;
+}
+
+#container-entrees h2,
+#container-dishes h2,
+#container-desserts h2 {
+    color: #fff;
+
+}
+
+.entrees,
+.dishes,
+.desserts {
+    color: #fff;
+    padding: 0.5em;
+    width: 30em;
+}
+
+.entrees h3,
+.dishes h3,
+.desserts h3 {
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #294B37;
+    padding-top: 2.5em;
+    height: 7em;
+    gap: 1em;
+}
+
+footer p {
+    display: grid;
+    color: #fff;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    #section-entrees,
+    #section-desserts,
+    #section-dishes {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 1em;
+    }
+
+    #section-entrees img,
+    #section-dishes img,
+    #section-desserts img {
+        display: none;
+    }
+
+    #section-entrees h2,
+    #section-desserts h2,
+    #section-dishes h2 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    #section-entrees,
+    #section-desserts,
+    #section-dishes {
+        gap: 1px;
+    }
+}
